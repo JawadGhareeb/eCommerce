@@ -1,0 +1,349 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+@media (min-width :992px) {
+  .container {
+      width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1320px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*               start         root       */
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 90%;
+    z-index: 95;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px !important;
+    transition: .5s;
+}
+header .allElement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgb(230, 230, 230);
+    min-height: 80px;
+    padding: 0 20px;
+}
+
+header .logo img {
+    max-width: 100%;
+}
+
+.linkss {
+    display: flex;
+    align-items: center;
+}
+
+.linkss .mark {
+    display: none;
+}
+
+.linkss li a {
+  width: 100%;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .3s;
+  position: relative;
+  cursor: pointer;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+}
+
+.linkss a.pge::after {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #c6c6c6;
+    margin-left: 10px;
+}
+
+.linkss li a::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    bottom: 0px;
+    width: calc(100% - 50px);
+    height: 2px;
+    border-radius: 6px;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+}
+
+.linkss li a:hover::before {
+    transform: scaleX(1);
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 10px;
+}
+
+header .icons li {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .icons .menu {
+    display: none;
+    cursor: pointer;
+}
+
+.secoundLinks {
+    display: none;
+}
+
+@media(max-width: 991px) {
+    .linkss {
+        display: none !important;
+    }
+
+    header .icons .menu {
+        display: flex;
+    }
+
+    .popup {
+        display: block !important;
+    }
+
+    .secoundLinks {
+        position: fixed;
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        right: -105%;
+        top: 0px;
+        height: 100vh;
+        background: white;
+        width: 280px;
+        padding: 15px;
+        transition: .7s;
+        z-index: 100;
+    }
+
+    .secoundLinks.veiw {
+        right: 0%;
+        transition: .5s;
+    }
+
+    .secoundLinks .mark {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    .secoundLinks .mark img {
+        max-width: 80%;
+    }
+
+    .secoundLinks .mark i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--green);
+        color: var(--black);
+        font-size: 13px;
+        transition: .3s;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .secoundLinks .mark i:hover {
+        background-color: var(--blue);
+        color: white;
+    }
+
+    .secoundLinks li a {
+        padding: 20px 10px;
+    }
+
+    .secoundLinks li a.active::before,
+    .secoundLinks li a::before {
+        left: 10px;
+        bottom: 15px;
+        width: calc(100% - 20px);
+    }
+}
+
+@media(max-width: 450px) {
+    .secoundLinks {
+        width: 200px
+    }
+}
+
+@media(min-width: 992px) {
+    .pgelinks {
+        position: fixed;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        box-shadow: 0 8px 8px rgb(230, 230, 230);
+        background: white;
+    }
+}
+
+.pgelinks {
+    overflow: auto;
+    width: 200px;
+    height: 0;
+    border-radius: 6px;
+    padding: 0 15px;
+    transition: .5s;
+    margin-left: 15px;
+}
+
+.linkss .pgelinks a {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    transition: .3s;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header .active::before {
+    transform: scaleX(1) !important;
+}
+
+.pgelinks::-webkit-scrollbar {
+    width: 0;
+}
+
+.pgelinks.more {
+    height: 246px;
+    transition: .5s;
+}
+
+.pgelinks a::before {
+    display: none;
+}
+
+.pgelinks a:hover {
+    color: var(--blue);
+}
+
+header .icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    color: #292930;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    transition: .3s;
+    z-index: 2;
+}
+
+header .icons a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--pink);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    z-index: 1;
+    transition: .3s;
+}
+header .icons a .iconHover {
+  z-index: 2;
+}
+header .icons a:hover .iconHover {
+    color: white !important;
+}
+
+header .icons a:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+header li a span {
+    padding: 5px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    line-height: 9px;
+    z-index: 3;
+    font-weight: 200;
+}
+
+.popup {
+    width: 120%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: -130%;
+    z-index: 98;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.popup.pop {
+    left: -10%;
+    transition: .5s;
+}
+
+header .page i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.linkss a.pge:before {
+    width: 45px;
+}

@@ -1,0 +1,128 @@
+.more-pro {
+    padding: var(--second-padding) 0 var(--main-padding);
+}
+
+.more-pro .head {
+    background-color: #f8f8f8;
+    padding: 40px 0 45px;
+}
+
+.more-pro .head p {
+    font-size: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.more-pro .head .a {
+    color: #999;
+    font-size: 14px;
+}
+
+.more-pro .head .a:hover {
+    color: var(--blue);
+}
+
+.more-pro .head span {
+    color: var(--blue);
+}
+
+.more-pro .cards .container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.more-pro .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+    margin: 30px auto;
+}
+
+.more-pro .card:hover img {
+    transform: scale(1.1);
+}
+
+.more-pro .card:hover .add {
+    z-index: 10;
+    opacity: 1;
+    bottom: 30px;
+}
+
+@keyframes show {
+    80% {
+        opacity: 1;
+    }
+
+    60% {
+        bottom: 25px;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 25px;
+        opacity: 1;
+    }
+}
+
+.more-pro .card .img {
+    overflow: hidden;
+    position: relative;
+}
+
+.more-pro .card img {
+    transition: .5s;
+    max-width: 250px;
+    border-radius: 20px;
+}
+
+.more-pro .card p {
+    position: absolute;
+    z-index: 10;
+    top: 10%;
+    background-color: var(--blue);
+    color: white;
+    padding: 3px 7px;
+    border-radius: 7px;
+    right: -10px;
+    box-shadow: 0 5px 4px #3576f052;
+}
+
+.more-pro .card .stars {
+    margin: 10px 0 0;
+}
+
+.more-pro .card .stars svg {
+    margin: 1px 0;
+    color: var(--yalow);
+    font-size: 18px;
+}
+
+.more-pro .card h3 a {
+    color: #777777;
+    margin: 5px 0;
+    display: block;
+    transition: .3s;
+    font-weight: 200;
+}
+
+.more-pro .card h3 a:hover {
+    color: var(--blue);
+}
+
+.more-pro .card .cost span:nth-child(1) {
+    color: var(-black);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.more-pro .card .cost span:nth-child(2) {
+    text-decoration: line-through;
+    color: #777777;
+    font-size: 16px;
+}

@@ -1,0 +1,252 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+@media (min-width :992px) {
+  .container {
+      width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1320px;
+  }
+}
+/*               start         root       */
+.main-landing {
+    padding-top: var(--second-padding);
+    padding-bottom: var(--main-padding);
+    background: var(--ClodyWhite);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.shap {
+    position: absolute;
+    bottom: -20%;
+    z-index: 1;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.main-landing .all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+@media(max-width: 767px) {
+    .main-landing .all {
+        flex-direction: column;
+        justify-content: center;
+        gap: 45px;
+    }
+}
+
+.main-landing .all .text {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* @media(max-width: 767px) {
+    .main-landing .all .text {
+        margin-bottom: 35px;
+    }
+} */
+
+.main-landing .all .text .hot {
+    display: flex;
+    align-items: center;
+}
+
+.main-landing .all .text .hot i {
+    color: white;
+    background: var(--pink);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.main-landing .all .text span {
+    display: block;
+    color: var(--pink);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main-landing .all h2 {
+    display: block;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.main-landing .all .reviews {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media(max-width: 767px) {
+    .main-landing .all .reviews {
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+.main-landing .all .reviews button {
+    position: relative;
+    background: var(--pink);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.main-landing .all .reviews button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--pink);
+    border-radius: 10px;
+    z-index: -1;
+    transition: .3s;
+}
+
+.main-landing .all .reviews button:hover::before {
+    transform: scale(1.07);
+}
+
+.main-landing .all .reviews i {
+    margin-right: 5px;
+}
+
+.main-landing .all .reviews .rteimg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-landing .all .reviews .smlimg {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.main-landing .all .reviews .smlimg img {
+    border: 2px solid white;
+    margin-left: -15px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.main-landing .all .reviews .smlimg img:nth-child(1) {
+    margin-left: 0;
+}
+
+.main-landing .all .reviews .rate {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main-landing .all .reviews .rate .icons-rate {
+    display: block;
+    color: #ffa800;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.main-landing .all .reviews .rate span {
+    color: var(--silver);
+    font-size: 12px;
+}
+
+.main-landing .all .images {
+    flex-basis: 45%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.main-landing .all .images .head-phone {
+    position: relative;
+}
+
+.main-landing .all .images .head-phone::-webkit-scrollbar {
+    width: 0;
+}
+
+.main-landing .all .images .head-phone .from {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    background: white;
+    border-radius: 50%;
+    padding: 20px;
+    gap: 10px;
+}
+
+.main-landing .all .images .head-phone .from span {
+    display: block;
+    color: var(--silver);
+}
+
+.main-landing .all .images .head-phone .from span.price {
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main-landing .all .images img {
+    max-width: 100%;
+}
+
+@media(max-width: 767px) and (min-width: 451px) {
+    .main-landing .all .images img {
+        max-width: 75%;
+    }
+}

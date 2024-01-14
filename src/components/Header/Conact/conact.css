@@ -1,0 +1,260 @@
+.contact {
+    background-color: var(--green);
+    padding: var(--second-padding) 0 40px;
+}
+
+.contact .explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .explore .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .explore .text .scond-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact .explore .text .scond-links li {
+    margin: 5px;
+}
+
+.contact .explore .text .scond-links .border {
+    height: 10px;
+    width: 3px;
+    background-color: #7777774f;
+}
+
+.contact .explore .text .scond-links li a {
+    color: var(--silver);
+    transition: 0.3s;
+}
+
+.contact .explore .text .scond-links li a:hover {
+    color: var(--blue);
+}
+
+.contact .explore .text .scond-links li .active {
+    color: var(--blue);
+}
+
+.contact .explore .text .heading {
+    margin: 0px;
+    margin-top: 25px;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contact .explore .imag {
+    position: relative;
+    z-index: 1;
+}
+
+.contact .explore .imag::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    border-radius: 50%;
+    left: -50px;
+    top: -25px;
+}
+
+@media(max-width: 767px) {
+    .contact .explore .imag {
+        display: none;
+    }
+}
+
+
+/* end contact */
+
+
+/* start information */
+
+.information {
+    background-color: white;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.information .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media(max-width: 991px) {
+    .information .info {
+        flex-direction: column;
+    }
+}
+
+.information .info .inputs {
+    flex-basis: 70%;
+}
+
+.information .info .inputs h3 {
+    color: var(--black);
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.information .info .inputs p {
+    color: var(--silver);
+    margin: 25px 0;
+    max-width: 100%;
+    line-height: 1.7;
+}
+
+.information .info .inputs form {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 50px;
+}
+
+.information .info .inputs .put {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 767px) {
+    .information .info .inputs .put {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.information .info .inputs form .box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 5px;
+}
+
+.information .info .inputs form .box label {
+    color: var(--silver);
+    font-size: 12px;
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.information .info .inputs form .box .name {
+    padding: 15px;
+    width: 100%;
+}
+
+.information .info .inputs form .box .message {
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.information .info .inputs form .box .name,
+.information .info .inputs form .box .message {
+    border: 1px solid #CBD3D9;
+    border-radius: 8px;
+    caret-color: var(--blue);
+    transition: .3s;
+}
+
+.information .info .inputs form .box .name:focus,
+.information .info .inputs form .box .message:focus {
+    outline: none;
+    border-color: var(--blue);
+}
+
+.information .info .inputs a {
+    display: block;
+    margin: 30px 0;
+}
+
+.information .info .inputs a button {
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 35px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.information .info .inputs a button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .3s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.information .info .inputs a button:hover::before {
+    transform: scale(1.1);
+}
+
+.information .info .adres {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.information .info .adres h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.information .info .adres p {
+    color: var(--silver);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.information .info .adres span {
+    display: block;
+    line-height: 1.7;
+    color: var(--silver);
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+/* end information */
+
+
+/* start map */
+
+.map {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.map iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 500px;
+}

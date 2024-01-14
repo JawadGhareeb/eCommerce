@@ -1,0 +1,40 @@
+{
+  "cart": [
+    {
+      "id": "7",
+      "imgUrl": "/assests/product-7.png",
+      "numberOfStars": 5,
+      "explore": "Yantiti Leather & Canvas Bags",
+      "costBefore": "$49.42",
+      "costAfter": 42.43,
+      "sold": true,
+      "text": "Add To Card",
+      "number": 1,
+      "userId": 1
+    },
+    {
+      "id": "8",
+      "imgUrl": "/assests/product-2.png",
+      "numberOfStars": 3,
+      "explore": "Yantiti Leather & Canvas Bags",
+      "costBefore": 45.73,
+      "sold": true,
+      "text": "Add To Card",
+      "number": 1,
+      "userId": 1
+    },
+    {
+      "id": "3",
+      "imgUrl": "/assests/product-3.png",
+      "numberOfStars": 3,
+      "explore": "Logitech Streamcam",
+      "costBefore": "$29.8",
+      "costAfter": 12.43,
+      "sold": false,
+      "text": "Add To Card",
+      "number": 1,
+      "userId": 1
+    }
+  ],
+  "view": []
+}

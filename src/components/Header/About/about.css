@@ -1,0 +1,434 @@
+.aboutstore {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: white;
+}
+
+.account .head {
+    background-color: #f8f8f8;
+    padding: 40px 0 45px;
+}
+
+.account .head p {
+    font-size: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.account .head .a {
+    color: #999;
+    font-size: 14px;
+}
+
+.account .head .a:hover {
+    color: var(--blue);
+}
+
+.account .head span {
+    color: var(--blue);
+}
+
+.aboutstore .shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 991px) {
+    .aboutstore .shop {
+        flex-direction: column;
+    }
+}
+
+.aboutstore .shop img {
+    max-width: 100%;
+}
+
+.aboutstore .shop .abt {
+    padding: 60px 0px 0px;
+}
+
+@media(min-width: 768px) {
+    .aboutstore .shop .abt {
+        padding-left: 60px;
+    }
+}
+
+.aboutstore .shop .str {
+    display: flex;
+    align-items: center;
+}
+
+.aboutstore .shop .str i {
+    color: white;
+    background-color: var(--blue);
+    padding: 5px;
+    border-radius: 50%;
+    width: fit-content;
+    font-size: 12px;
+}
+
+.aboutstore .shop .str span {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.aboutstore .shop h3 {
+    font-size: 26px;
+    color: var(--black);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.aboutstore .shop p {
+    color: var(--silver);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.aboutstore .shop .spn p {
+    display: block;
+    font-size: 14px;
+    color: var(--silver);
+    line-height: 1.7;
+    padding: 15px;
+    margin: 0;
+}
+
+
+/* end aboutstore */
+
+
+/* start propbably */
+
+.probably {
+    position: relative;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: white;
+    z-index: 1;
+}
+
+.probably::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: var(--lightColor);
+    z-index: -1;
+}
+
+.probably .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.probably .boxes .box {
+    background-color: white;
+    box-shadow: 0 16px 32px rgb(238, 238, 238);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 30px;
+    transition: .3s;
+    max-width: 380px;
+}
+
+.probably .boxes .box:hover {
+    transform: translateY(-10px);
+    border-color: var(--blue);
+    box-shadow: 0 20px 40px rgb(238, 238, 238);
+}
+
+.probably .boxes .box h4 {
+    margin: 0;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.probably .boxes .box p {
+    color: var(--silver);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* end propbably */
+
+
+/* start team */
+
+.team {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-color: var(--lightColor);
+}
+
+.team .container .all {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.team .container .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team .container .text .sub {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.team .container .text .sub i {
+    color: white;
+    background-color: var(--purple);
+    padding: 5px;
+    border-radius: 50%;
+    width: fit-content;
+    font-size: 12px;
+}
+
+.team .container .text .sub span {
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.team .container .text h2 {
+    margin: 0px;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.team .container .members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team .container .members .box {
+    overflow: hidden;
+    margin: 5px;
+    position: relative;
+}
+
+.team .container .members .image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.team .container .members img {
+    max-width: 100%;
+    transition: .3s;
+    border-radius: 8px;
+}
+
+.team .container .members .box:hover img {
+    border-radius: 8px;
+    transform: scale(1.05)
+}
+
+.team .container .members .box .ul {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+    opacity: 0;
+    gap: 10px;
+    transition: .5s;
+}
+
+.team .container .members .box:hover .ul {
+    bottom: 95px;
+    opacity: 1;
+}
+
+.team .container .members .box .ul a {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .container .members .box .ul::before {
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    width: 33px;
+    height: 33px;
+    border: 50;
+    border-radius: 25%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: -1;
+}
+
+.team .container .members .box .ul a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -1;
+    top: 0;
+}
+
+.team .container .members .box .ul a:nth-child(1):before {
+    background-color: #0077b5;
+}
+
+.team .container .members .box .ul a:nth-child(2):before {
+    background-image: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+}
+
+.team .container .members .box .ul a:nth-child(3):before {
+    background-color: #1da1f2;
+}
+
+.team .container .members .box .ul a i {
+    color: white;
+}
+
+.team .container .members .text {
+    margin-top: 20px;
+}
+
+.team .container .members span {
+    display: block;
+    color: var(--silver);
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.team .container .members .box h3 {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 600;
+    margin: 0;
+    transition: .3s;
+}
+
+.team .container .members .box:hover h3 {
+    color: var(--blue);
+}
+
+
+/* end team */
+
+
+/* start soulation */
+
+.soulation {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.soulation .together {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soulation .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media(max-width:991px) {
+    .soulation .together {
+        flex-direction: column;
+    }
+}
+
+.soulation .together img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.soulation .together .slt {
+    padding: 60px 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.soulation .reverse .slt {
+    padding: 60px 60px 0 0px;
+}
+
+@media(max-width:991px) {
+    .soulation .together .slt {
+        padding-left: 0;
+    }
+
+    .soulation .reverse .slt {
+        padding-right: 0;
+    }
+}
+
+.soulation .together .slt .work {
+    margin-bottom: 25px;
+}
+
+.soulation .together .slt span {
+    display: block;
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.soulation .together .slt h3 {
+    margin: 0;
+    font-size: 32px;
+    color: var(--black);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.soulation .together .slt p {
+    display: block;
+    font-size: 14px;
+    color: var(--silver);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.soulation .together .slt a {
+    margin-top: 30px;
+}
+
+.soulation .together .slt a button {
+    background-color: white;
+    border: 1px solid #CBD3D9;
+    color: var(--black);
+    font-weight: 700;
+    padding: 20px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.soulation .together .slt a button:hover {
+    background-color: var(--blue);
+    color: white;
+}

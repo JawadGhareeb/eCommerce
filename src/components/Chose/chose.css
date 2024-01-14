@@ -1,0 +1,13 @@
+.choose {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.choose .main-head .dox {
+    text-align: center;
+}
+
+.choose .main-head .dox .textt {
+    width: fit-content;
+    margin: 0 auto;
+}

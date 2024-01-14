@@ -1,0 +1,31 @@
+.allCards .card {
+    box-shadow: 0 0 8px rgb(0, 0, 0, .2);
+    border-radius: 10px;
+    /* border: .8px solid rgba(255, 255, 255, 0.2); */
+    scroll-snap-type: inline mandatory;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    width: 150px;
+    justify-content: space-between;
+    margin: 0 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.allCards .card:hover {
+    transform: scale(1.03);
+}
+
+.allCards .card p {
+    font-weight: 500;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.allCards .card img {
+    max-width: 100%;
+    width: 50px;
+}

@@ -1,0 +1,317 @@
+    .section .container .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 40px;
+    }
+
+    .section .container .content .box {
+        display: flex;
+        align-items: center;
+    }
+
+    .section .container .content .box .image {
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    .section .container .content .box img {
+        max-height: 50px;
+    }
+
+    .section .container .content .box h5 {
+        color: var(--black);
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+
+    .section .container .content .box span {
+        color: var(--silver);
+        font-size: 14px;
+    }
+
+    /* end section */
+    /* start footer */
+
+    .footer {
+        background-color: var(--lightColor);
+    }
+
+    footer .links {
+        position: relative;
+    }
+
+    footer .links::before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 2px);
+        height: 2px;
+        background-color: #f2f2f2;
+        top: -30px;
+        left: 1px;
+        border-radius: 10px;
+    }
+
+    footer .container .accounts {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 45px;
+    }
+
+    @media(max-width: 991px) {
+        footer .container .accounts {
+            gap: 0;
+        }
+    }
+
+    footer .container .accounts .one {
+        margin-top: 20px;
+    }
+
+    footer .container .accounts .one h4 {
+        color: var(--black);
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    footer .container .accounts .one ul p {
+        color: var(--silver);
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+
+    footer .container .accounts .one .change .normal {
+        font-weight: normal;
+    }
+
+    footer .container .accounts .one ul li {
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+
+    footer .container .accounts .one ul li a {
+        color: var(--silver);
+        transition: var(--main-transition);
+        transform-origin: left;
+        position: relative;
+    }
+
+    footer .container .accounts .one ul li a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-color: var(--black);
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        border-radius: 10px;
+        transform: scaleX(0);
+        transition: calc(var(--main-transition) + 0.2s);
+        transform-origin: left;
+    }
+
+    footer .container .accounts .one ul li .nor::after {
+        display: none;
+    }
+
+    footer .container .accounts .one ul li a:hover {
+        color: var(--black);
+    }
+
+    footer .container .accounts .one ul li a:hover::after {
+        transform: scaleX(1);
+    }
+
+    footer .container .accounts .one ul li a i {
+        margin-right: 5px;
+    }
+
+    footer .container .accounts .one .downlaod span {
+        color: var(--silver);
+        font-weight: normal;
+    }
+
+    footer .container .accounts .one .downlaod .app {
+        margin-top: 25px;
+        display: flex;
+    }
+
+    footer .container .accounts .one .downlaod .app .store {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer .container .accounts .one .downlaod .app .store .play {
+        cursor: pointer;
+    }
+
+    footer .container .accounts .one .downlaod .app .QR {
+        margin-right: 20px;
+    }
+
+    footer .container .foot {
+        padding-top: calc(var(--main-padding) - 30px);
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    footer .container .foot::before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 2px);
+        height: 2px;
+        background-color: #f2f2f2;
+        left: 1px;
+        border-radius: 10px;
+    }
+
+    footer .container .foot .social {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    footer .container .foot .social li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    footer .container .foot .social li a {
+        color: var(--silver);
+        transition: 0.3s;
+    }
+
+    footer .container .foot .social li {
+        position: relative;
+    }
+
+    footer .container .foot .social li::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border-radius: 50%;
+        padding: 0;
+        z-index: -1;
+        background-color: var(--pink);
+        width: 30px;
+        height: 30px;
+        transform-origin: center;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.3s;
+    }
+
+    footer .container .foot .social li:hover::before {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    footer .container .foot .social li a:hover {
+        color: var(--blue);
+    }
+
+    footer .container .foot .create {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    footer .container .foot .create h5 {
+        color: var(--silver);
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    footer .container .foot .create h5 a {
+        color: var(--silver);
+        font-size: 14px;
+        font-weight: 500;
+        position: relative;
+        transition: calc(var(--main-transition) + 0.2s);
+    }
+
+    footer .container .foot .create h5 a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--black);
+        left: 0;
+        bottom: -1px;
+        border-radius: 10px;
+        transition: calc(var(--main-transition) + 0.2s);
+        transform-origin: left;
+        transform: scaleX(0);
+    }
+
+    footer .container .foot .create h5 a:hover {
+        color: var(--black);
+    }
+
+    footer .container .foot .create h5 a:hover::after {
+        transform: scaleX(1);
+    }
+
+    footer .container .foot .accept {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    footer .container .foot .accept span {
+        color: var(--silver);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    footer .container .foot .accept .images {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    footer .container .foot .accept .images li:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    @media(max-width: 1199px) {
+        footer .container .foot {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer .container .foot .accept,
+        footer .container .foot .create,
+        footer .container .foot .social {
+            padding: 10px 0;
+        }
+
+        footer .container .foot .social {
+            padding: 20px 0 0 0;
+        }
+    }
+
+    @media(max-width:575px) {
+        footer .container .accounts {
+            text-align: center;
+        }
+
+        footer .container .accounts .one .downlaod .app {
+            justify-content: center;
+        }
+    }
+
+    @media(max-width:617px) {
+        .section .container .content .box {
+            justify-content: center;
+            gap: 10px;
+        }
+    }

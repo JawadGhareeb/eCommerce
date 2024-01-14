@@ -1,0 +1,7 @@
+.login .sigin {
+    justify-content: start;
+}
+
+.login.l .container {
+    flex-direction: row-reverse;
+}

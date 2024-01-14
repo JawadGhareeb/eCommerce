@@ -1,0 +1,280 @@
+.login {
+    padding: var(--second-padding) 0 0;
+}
+
+.login .container {
+    display: flex;
+    height: 95vh;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.login .image {
+    flex-basis: 35%;
+    height: 100%;
+    padding: 30px 30px;
+    background-image: url(../../../../public/assests/bg-image-10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    flex-basis: 50%;
+}
+
+.login .image .text {
+    margin-top: 40px;
+}
+
+.login .image .text h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #292930cc;
+}
+
+@media(max-width: 767px) {
+    .login {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .login .image {
+        display: none;
+    }
+
+    .login .image .text {
+        display: none;
+    }
+}
+
+.login .all {
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-left: 40px;
+}
+
+@media(max-width: 767px) {
+    .login .all {
+        align-items: center;
+    }
+}
+
+.login .sigin {
+    display: flex;
+    align-items: baseline;
+    justify-content: end;
+}
+
+.login .sigin span {
+    display: block;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.login .sigin a {
+    margin: 10px;
+}
+
+.login .sigin .btn {
+    background: var(--pink);
+    padding: 20px 35px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.login .sigin .btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--pink);
+    border-radius: 8px;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.login .sigin .btn:hover::before {
+    transform: scale(1.07);
+}
+
+.login .all .inputs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+@media (max-width: 767px) {
+    .login .all .inputs {
+        align-items: center;
+    }
+}
+
+.login .all .inputs h2 {
+    margin: 0;
+    font-size: 28px;
+    color: var(--black);
+}
+
+.login .all .inputs span {
+    display: block;
+    color: var(--silver);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.login .all .inputs form {
+    width: 100%;
+}
+
+.login .all .inputs form .box {
+    position: relative;
+    margin: 30px 0;
+}
+
+.login .all .inputs form .box:nth-child(1) {
+    margin: 0;
+}
+
+.login .all .inputs form .box:nth-child(3) {
+    margin-bottom: 80px;
+}
+
+.login .all .inputs form .box .name {
+    width: 300px;
+    max-width: 100%;
+    padding: 15px 40px;
+    padding-left: 15px;
+    border-radius: 8px;
+    border: 1px solid #CBD3D9;
+    transition: 0.3s;
+    font-size: 14px;
+    color: var(--black);
+    caret-color: var(--blue);
+    display: block;
+}
+
+.login .all .inputs form .box .name:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: 0 0 6px #3577f082;
+}
+
+.login .all .inputs form .box .name::placeholder {
+    transition: .3s;
+}
+
+.login .all .inputs form .box .name:focus::placeholder {
+    color: transparent;
+}
+
+.login .all .inputs form .box label {
+    position: absolute;
+    transition: .3s;
+    z-index: -1;
+    background: white;
+    border-radius: 30px;
+    left: 15px;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: var(--silver);
+}
+
+.login .all .inputs form .box .name:focus+label {
+    animation: label .3s forwards;
+}
+
+@keyframes label {
+    0% {
+        color: var(--silver);
+        font-size: 16px;
+        top: 50%;
+        z-index: -1;
+    }
+
+    10% {
+        width: fit-content;
+    }
+
+    100% {
+        color: var(--blue);
+        font-size: 11px;
+        top: 0px;
+        z-index: 1;
+        width: fit-content;
+        font: 600;
+    }
+}
+
+.login .all .inputs a {
+    margin: 0 auto;
+}
+
+.login .all .sub input {
+    padding: 20px 35px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    width: 160px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .sub {
+    position: relative;
+    width: fit-content;
+    margin: 50px auto 0;
+}
+
+.login .all .sub::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--blue);
+    border-radius: 8px;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.login .all .sub:hover::before {
+    transform: scale(1.05);
+}
+
+.login .sub input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}

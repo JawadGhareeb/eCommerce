@@ -1,0 +1,192 @@
+.sold {
+    padding-top: var(--second-padding);
+    padding-bottom: var(--main-padding);
+    background-color: white;
+    overflow: hidden;
+}
+
+.sold .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.sold .heading h3 {
+    margin: 0;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.sold .heading span {
+    display: block;
+    font-size: 14px;
+    color: var(--blue);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sold .heading span:hover {
+    color: var(--black);
+}
+
+.sold .list {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.list::-webkit-scrollbar {
+    width: 0;
+}
+
+.sold .list table {
+    width: 100%;
+    min-width: 1000px;
+    border-spacing: 0;
+}
+
+
+/* thead */
+
+.sold .list table thead {
+    background-color: var(--lightColor);
+}
+
+.sold .list table thead td {
+    color: var(--black);
+    padding: 25px;
+    padding-left: 70px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.sold .list table thead td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.sold .list table thead td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+
+/* tbody */
+
+.sold .list table tbody {
+    background-color: white;
+}
+
+.sold .list table tbody tr {
+    border-bottom: 1px solid var(--silver);
+}
+
+.sold .list table tbody td {
+    padding: 25px;
+    padding-left: 70px;
+    color: var(--silver);
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.sold .list table tbody td:first-child,
+.sold .list table tbody td:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.sold .list table tbody td:first-child {
+    padding: 0;
+}
+
+.sold .list table tbody td:first-child svg,
+.sold .list table tbody td:nth-child(3) svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    color: var(--black);
+    background-color: var(--lightColor);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+    padding: 3px;
+}
+
+.sold .list table tbody td:first-child svg:hover,
+.sold .list table tbody td:nth-child(3) svg:hover {
+    border-color: var(--blue);
+}
+
+.sold .list table img {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+}
+
+.sold .list table tbody td span {
+    display: block;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 20px;
+}
+
+.sold .clicks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.sold .click {
+    margin: 0;
+}
+
+.sold .click a {
+    margin: 0;
+}
+
+.sold .in {
+    outline: none;
+    border: 1px solid rgb(0, 0, 0, 20%);
+    padding: 8px 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 275px;
+    transition: .3s;
+    caret-color: var(--blue);
+    margin: auto;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+}
+
+.sold input:focus {
+    border-color: var(--blue);
+}
+
+.sold input::placeholder {
+    transition: .5s;
+}
+
+.sold input:focus::placeholder {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .sold .clicks {
+        flex-direction: column;
+    }
+
+    .sold .clicks>* {
+        margin-bottom: 40px;
+    }
+
+    .sold .click {
+        margin-bottom: 20px;
+        width: 80%;
+        text-align: center;
+    }
+}

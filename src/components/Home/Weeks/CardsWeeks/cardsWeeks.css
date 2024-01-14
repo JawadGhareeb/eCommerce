@@ -1,0 +1,151 @@
+.week .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 276px;
+    max-height: 843px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+.week .card:hover img {
+    transform: scale(1.1);
+}
+
+@keyframes show {
+    80% {
+        opacity: 1;
+    }
+
+    60% {
+        bottom: 25px;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 25px;
+        opacity: 1;
+    }
+}
+
+.week .card .img {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+
+.week .card img {
+    transition: .5s;
+    width: 276px;
+}
+
+.week .card p {
+    position: absolute;
+    z-index: 10;
+    top: 10%;
+    background-color: var(--blue);
+    color: white;
+    padding: 3px 7px;
+    border-radius: 7px;
+    right: -10px;
+    box-shadow: 0 5px 4px #3576f052;
+    font-size: 12px;
+}
+
+.card .stars {
+    margin: 10px 0 0;
+}
+
+.card .stars svg {
+    margin: 1px 0;
+    color: var(--yalow);
+    font-size: 18px;
+}
+
+.card h3 a {
+    color: #777777;
+    margin: 5px 0;
+    display: block;
+    transition: .3s;
+    font-weight: 200;
+}
+
+.card h3 a:hover {
+    color: var(--blue);
+}
+
+.card .cost span:nth-child(1) {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.card .cost span:nth-child(2) {
+    text-decoration: line-through;
+    color: #777777;
+    font-size: 16px;
+}
+
+.week .colors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 10px;
+}
+
+.week .colors li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.week .colors li.active {
+    transition: .5s;
+}
+
+.week .colors li:nth-child(1) {
+    background-color: #ff8666;
+}
+
+.week .colors li:nth-child(2) {
+    background-color: #ff497c;
+}
+
+.week .colors li:nth-child(3) {
+    background-color: #8c71db;
+}
+
+.week .colors li::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.week .colors li.active:nth-child(1)::before {
+    border-color: #ff8666;
+    transition: .5s;
+}
+
+.week .colors li.active:nth-child(2)::before {
+    border-color: #ff497c;
+}
+
+.week .colors li.active:nth-child(3)::before {
+    border-color: #8c71db;
+}

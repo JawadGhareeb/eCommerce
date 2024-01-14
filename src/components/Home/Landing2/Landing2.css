@@ -1,0 +1,89 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+@media (min-width :992px) {
+  .container {
+      width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1320px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*               start         root       */
+.landing2 .h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.landing2 {
+    padding: 80px 0 50px;
+}
+
+.landing2 .poster {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--lightColor);
+    padding: 65px 80px;
+    border-radius: 40px;
+}
+
+.landing2 .poster .text {
+    margin: 0 auto;
+}
+
+.landing2 .poster .img {
+    margin: 0 auto;
+    margin-top: -160px;
+    position: relative;
+    width: 400px;
+}
+
+@media (max-width :1020px) {
+    .landing2 .poster .img {
+        margin-top: 20px;
+    }
+
+    .landing2 .poster .text {
+        margin-bottom: 30px;
+        ;
+    }
+}
+
+@media (max-width: 768px) {
+    .h2 {
+        font-size: 30px;
+    }
+}
+
+.landing2 .poster img {
+    max-width: 100%;
+    width: 400px;
+}

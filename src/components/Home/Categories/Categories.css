@@ -1,0 +1,159 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+@media (min-width :992px) {
+  .container {
+      width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1320px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*               start         root       */
+.categories {
+    padding: 80px 0 50px;
+    position: relative;
+}
+
+.categories h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.allCards {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 150px;
+    padding: 20px 0;
+    gap: 30px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    grid-template-rows: min-content;
+    position: relative;
+    margin: 30px 0px 0;
+}
+
+.allCards::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+@media (max-width:767px) {
+    .allCards .card {
+        grid-auto-columns: 50%;
+    }
+}
+
+@media (max-width:480px) {
+    .allCards .card {
+        grid-auto-columns: 80%;
+    }
+}
+
+.categories .main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.categories .main-head .chang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.categories .main-head .chang .i {
+    border: none;
+    width: fit-content;
+    background-color: var(--blue);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+}
+
+.categories .main-head .chang .i svg {
+    transition: 0.2s;
+}
+
+.categories .main-head .chang .i:hover svg:nth-child(1) {
+    animation: swp 0.5s linear;
+}
+
+.categories .main-head .chang .i:hover svg:nth-child(2) {
+    animation: spe 0.5s linear;
+}
+
+@keyframes swp {
+    40% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateX(3px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes spe {
+    40% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
