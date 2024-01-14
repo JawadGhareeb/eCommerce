@@ -185,11 +185,13 @@
 }
 
 .team .container .text .sub {
+  display: flex;
+  align-items: center;
     margin: 0;
     margin-bottom: 20px;
 }
 
-.team .container .text .sub i {
+.team .container .text .sub a {
     color: white;
     background-color: var(--purple);
     padding: 5px;
@@ -304,7 +306,7 @@
     background-color: #1da1f2;
 }
 
-.team .container .members .box .ul a i {
+.team .container .members .box .ul a {
     color: white;
 }
 

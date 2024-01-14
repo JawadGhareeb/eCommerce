@@ -1,5 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import "./about.css";
 const About = () => {
   function start() {
@@ -89,7 +93,9 @@ const About = () => {
           <div className="all">
             <div className="text">
               <div className="sub">
-                <i className="fa-solid fa-users"></i>
+                <a>
+                  <PeopleAltIcon />
+                </a>
                 <span>Our Team</span>
               </div>
               <h2>Expart Management Team</h2>
@@ -105,15 +111,15 @@ const About = () => {
                   href="https://www.facebook.com/profile.php?id=100078778718000&mibextid=ZbWKwL"
                   target="_bank"
                 >
-                  <i className="fa-brands fa-facebook-f"></i>
+                  <FacebookIcon />
                 </a>
 
                 <a href="https://www.instagram.com/ahmad09_ha" target="_bank">
-                  <i className="fa-brands fa-instagram"></i>
+                  <InstagramIcon />
                 </a>
 
                 <a>
-                  <i className="fa-brands fa-linkedin"></i>
+                  <LinkedInIcon />
                 </a>
               </div>
               <div className="text">
@@ -127,18 +133,18 @@ const About = () => {
               </div>
               <div className="ul">
                 <a href="https://facebook.com/JawadGhareeb.12" target="_bank">
-                  <i className="fa-brands fa-facebook-f"></i>
+                  <FacebookIcon />
                 </a>
 
                 <a
                   href="https://www.instagram.com/jawad.ghareeb"
                   target="_bank"
                 >
-                  <i className="fa-brands fa-instagram"></i>
+                  <InstagramIcon />
                 </a>
 
                 <a href="">
-                  <i className="fa-brands fa-linkedin"></i>
+                  <LinkedInIcon />
                 </a>
               </div>
               <div className="text">
@@ -152,18 +158,18 @@ const About = () => {
               </div>
               <div className="ul">
                 <a href="https://www.facebook.com/mhmdaghryba" target="_bank">
-                  <i className="fa-brands fa-facebook-f"></i>
+                  <FacebookIcon />
                 </a>
 
                 <a
                   href="https://www.instagram.com/mohammad.al.ghareeb"
                   target="_bank"
                 >
-                  <i className="fa-brands fa-instagram"></i>
+                  <InstagramIcon />
                 </a>
 
                 <a>
-                  <i className="fa-brands fa-linkedin"></i>
+                  <LinkedInIcon />
                 </a>
               </div>
               <div className="text">
@@ -177,20 +183,20 @@ const About = () => {
               </div>
               <div className="ul">
                 <a href="https://www.facebook.com/abodHares.1" target="_bank">
-                  <i className="fa-brands fa-facebook-f"></i>
+                  <FacebookIcon />
                 </a>
 
                 <a
                   href="https://instagram.com/abod_hares?igshid=MzRlODBiNWFlZA=="
                   target="_bank"
                 >
-                  <i className="fa-brands fa-instagram"></i>
+                  <InstagramIcon />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/abdulrahman-hares-2aa15b24a"
                   target="_bank"
                 >
-                  <i className="fa-brands fa-linkedin"></i>
+                  <LinkedInIcon />
                 </a>
               </div>
               <div className="text">
