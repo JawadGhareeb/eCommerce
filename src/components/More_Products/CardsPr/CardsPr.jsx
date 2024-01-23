@@ -1,10 +1,10 @@
 import React from "react";
-import "./Mcards.css";
 import { useDispatch } from "react-redux";
-import Stars from "./Stars";
 import { AiOutlineHeart } from "react-icons/ai";
 import { insertPost } from "../../state/postSlice.js";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
+import Stars from "./Stars";
+import "./Mcards.css";
 function CardsPr(props) {
   const dispatch = useDispatch();
   const sub = () => {
@@ -30,18 +30,7 @@ function CardsPr(props) {
         number: 1,
       })
     );
-    // .unwrap()
-    // .then(() => {
-    //     navigate("/");
-    // })
-    // .catch((er) => {
-    //     console.log(er);
-    // });
   };
-  function pop() {
-    document.querySelector(".popup").classList.add("pop");
-    document.querySelector(".view").classList.add("added");
-  }
 
   return (
     <div className="card">
@@ -53,7 +42,7 @@ function CardsPr(props) {
             <AiOutlineHeart onClick={() => console.log(props.cart)} />
           </div>
           <span onClick={sub}>{props.text}</span>
-          <div className="i" onClick={pop}>
+          <div className="i">
             <MdOutlineRemoveRedEye />
           </div>
         </div>

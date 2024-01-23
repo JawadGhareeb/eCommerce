@@ -7,10 +7,6 @@ import { useDispatch } from "react-redux";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 function CardsPr(props) {
   const dispatch = useDispatch();
-  function pop() {
-    document.querySelector(".popup").classList.add("pop");
-    document.querySelector(".view").classList.add("added");
-  }
 
   const sub = () => {
     const pro1 = props.imgUrl;
@@ -53,7 +49,7 @@ function CardsPr(props) {
             <AiOutlineHeart />
           </div>
           <p onClick={() => sub()}>{props.text}</p>
-          <div className="i" onClick={pop}>
+          <div className="i">
             <MdOutlineRemoveRedEye />
           </div>
         </div>
